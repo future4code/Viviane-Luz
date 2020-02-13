@@ -1,0 +1,65 @@
+.logo-loja{
+    font-family: sans-serif;
+    display: inline;
+}
+
+.menu{
+    vertical-align: middle;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #cc835c;
+}
+.itens-menu{
+    float: right;
+    display: inline;
+}
+.item-menu{
+    padding: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #613480;
+    text-decoration: none;
+    display: inline;
+    
+}
+p {
+    display: inline;
+
+}
+
+.produtos{
+    text-align: center;
+    padding: 80px;
+    margin: 0px auto;
+}
+
+.produto {
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+    padding: 40px;
+    background-color: #fff5ef;
+    border-radius: 20px;
+}
+.produto:hover {
+    display: inline-block;
+    margin: 40px;
+    width: 200px;
+
+    background-color: #f9e7dd;
+}
+h3 {
+    color: #b5846a;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+
+    color: blanchedalmond;  
+    height: 200px;
+    background-color: black;
+}
+.contato{
+    text-align: center;
+}
