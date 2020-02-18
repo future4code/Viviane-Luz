@@ -1,0 +1,145 @@
+
+.menu{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    color:#81587B;
+    font-style: bold;
+    width: 890px;   
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+h2{
+    margin: 0 auto;
+    width: 900px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-style:bold;
+    font-family:arial ;
+} 
+h1{
+    margin: 0 auto;
+    width: 900px;
+    color: black;
+    text-align: center;
+
+    font-style:bold;
+    font-family:arial ;
+}  
+.caixas{
+    top: 100px;
+    margin: 10px;
+    text-align: center;
+    font-style: bold;
+    font-family: arial;
+}
+.botao1{
+    border-radius: 8px;
+    background-color:  #FFF9F0;
+    margin: 21px;
+    padding: 50px;
+    border: solid 1px;  
+    text-align: center;
+    display:inline-block; 
+    color: #E05A00;
+    font-size: 20px;
+    width: 100px;
+}
+.botao2{
+    border-radius: 8px;
+    background-color: #F2FBF5;
+    margin: 21px;
+    padding: 50px;
+    border: solid 1px;
+    text-align: center;
+    color:#0A6719;
+    display:inline-block; 
+    font-size: 20px;
+    width: 100px;
+}
+.botao3{
+    border-radius: 8px;
+    background-color: #F0F8FF;
+    margin: 21px;
+    padding: 50px;
+    border: solid 1px;
+    text-align: center;
+    color: #2246AB;
+    display:inline-block; 
+    font-size: 20px;
+    width: 100px;
+}
+h3{
+    font-style: bold;
+    font-family: sans-serif, arial;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+.botom{
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px 8px;
+    border-radius: 38px;
+    background-color: #81587B;
+    width: 200px;
+    height: 40px;
+    color: white;
+  
+}
+
+.projetos{
+    margin: 0 auto;
+    width: 700px;
+
+}
+.caixa-projeto1{
+    border-radius: 8px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    display:inline-block; 
+    font-size: 20px;
+}
+.caixa-projeto2{
+    border-radius: 8px;
+    margin: 10px;   
+    position: relative;
+    text-align: center;
+    display:inline-block; 
+    font-size: 20px;
+}
+
+
+.img-projeto{
+    width: 600px;
+    text-align: center;
+    margin-top: 40px;
+}
+h3{
+    color: black;
+    text-align: left;
+}
+footer{
+
+    background-color:grey;
+    margin-top: 80px;
+    height: 40px;
+    padding: 100px;
+    
+
+}
+.imagem-projetof4{
+    text-align: center;
+}
+.campo-formulario{
+    text-align: center;
+    display: inline-block;
+    margin: auto 0;
+    padding: 80px;
+
+}
