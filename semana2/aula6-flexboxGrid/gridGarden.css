@@ -1,0 +1,48 @@
+level 1{
+    grid-column-start:3; 
+}
+level 2{
+    grid-column-start:5;
+}
+level 3{
+    grid-column-end:4;
+}
+level4{
+    grid-column-end:2;
+}
+level 5{
+    grid-column-end:-2;
+}
+level 6{
+
+}grid-column-start:-3;
+level 7{
+    grid-column-end: span 2;
+}
+level8{
+    grid-column-end: span 5;
+}
+level 9{
+    grid-column-start: span 3;
+}
+level 10{
+    grid-column: 4/6
+}
+level 12{
+    grid-row-start: 3;
+}
+level 13{
+    grid-row:span 3/6
+}
+level 18 {
+    order:6
+}
+level 19{
+    order:-2
+}
+level 20{
+    grid-template-columns:50%
+}
+level 22 {
+    
+}
