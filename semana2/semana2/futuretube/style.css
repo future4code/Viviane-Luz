@@ -1,0 +1,111 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+header{
+    background-color: #FF8C00;
+    margin: 10px;
+    padding: 20px;
+}
+
+.container{
+        justify-items: center;
+            display:grid;
+
+            /* grid-auto-rows: 800px;  */
+            align-items: center;
+            grid-template-columns: repeat (4,1fr);
+
+} 
+h2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    text-align: center;
+    
+}
+
+.caixa1 { 
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+    grid-column: 1;     
+    grid-row: 1; 
+} 
+.caixa2 { 
+    margin: 40px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+}
+.caixa3 { 
+    margin: 40px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 200px;
+    height: 200px;
+}
+.caixa4 { 
+    margin: 40px;
+    grid-column: 2;
+    grid-row: 3;
+    width: 200px;
+    height:200px;
+}
+.caixa5 { 
+    margin: 40px;
+    grid-column: 3;
+    grid-row: 1;
+    width: 200px;
+    height:200px
+
+}
+.caixa6 { 
+    margin: 40px;
+    grid-column: 4;
+    grid-row: 1;
+    width: 200px;
+    height:200px
+}
+.caixa7 { 
+    margin: 40px;
+    grid-column: 3;
+    grid-row: 3;
+    width: 200px;
+    height:200px
+}
+.caixa8{
+    margin: 40px;
+    grid-column: 4;
+    grid-row: 3;
+    width: 200px;
+    height:200px
+}
+footer{
+    background-color: grey;
+    /* margin: 10px; */
+    padding: 18px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 10px;
+}
+.video{
+    padding: 20px;
+    width: 800px;
+    display: flex;
+    margin: 40px;
+    text-align: center;
+    margin: auto 0;
+}
+@media screen and (max-width: 400px) {
+    .three-blocks-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0px 5px;
+    }
+
