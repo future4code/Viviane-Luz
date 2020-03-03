@@ -28,60 +28,61 @@ d. O preço da fruta  pera  é  R$  5
 
 // a. console.log("o primeiro é igual ao segundo numero")
 
-// const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
-// const numeroSegundo = Number(prompt("digite o numero segundo"))
+ const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
+ const numeroSegundo = Number(prompt("digite o numero segundo"))
 
-// if(numeroPrimeiro === numeroSegundo){
-//     console.log("o primeiro é igual ao segundo numero")
-// }
-// if(numeroPrimeiro > numeroSegundo){
-//    console.log(numeroPrimeiro, numeroSegundo)
-//    } 
-// if(numeroPrimeiro < numeroSegundo){
-//    console.log(numeroSegundo, numeroPrimeiro)
-// }
+if(numeroPrimeiro === numeroSegundo){
+     console.log("o primeiro é igual ao segundo numero")
+ }
+ if(numeroPrimeiro > numeroSegundo){
+    console.log(numeroPrimeiro, numeroSegundo)
+    } 
+ if(numeroPrimeiro < numeroSegundo){
+    console.log(numeroSegundo, numeroPrimeiro)
+ }
 
 
 
 // b. console.log("todos os numeros sao iguais")
 
-// const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
-// const numeroSegundo = Number(prompt("digite o numero segundo"))
-// const numeroTerceiro = Number(prompt("digite o terceiro numero"))
+ const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
+const numeroSegundo = Number(prompt("digite o numero segundo"))
+ const numeroTerceiro = Number(prompt("digite o terceiro numero"))
     
-// if(numeroTerceiro === numeroSegundo && numeroSegundo === numeroPrimeiro){
-//     console.log("todos os numeros sao iguais")
-// }
-// else if(numeroPrimeiro === numeroSegundo){
-//      console.log("o primeiro e igual ao segundo numero")
-// }
-// else if(numeroPrimeiro > numeroSegundo && numeroSegundo > numeroTerceiro){
-//     console.log(numeroPrimeiro, numeroSegundo, numeroTerceiro)
-//     } 
-// else if(numeroPrimeiro > numeroTerceiro && numeroTerceiro > numeroSegundo){
-//     console.log(numeroPrimeiro, numeroTerceiro, numeroSegundo)
-// }
-// else if(numeroSegundo > numeroPrimeiro && numeroPrimeiro > numeroTerceiro){
-//     console.log(numeroSegundo, numeroPrimeiro, numeroTerceiro)
-// }
-// else if(numeroSegundo > numeroTerceiro && numeroTerceiro > numeroPrimeiro){
-//     console.log(numeroSegundo, numeroTerceiro, numeroPrimeiro)
-// }
-// else if(numeroTerceiro > numeroPrimeiro && numeroPrimeiro > numeroSegundo){
-//     console.log(numeroTerceiro, numeroPrimeiro, numeroSegundo)
-// }
-// else if(numeroTerceiro > numeroSegundo && numeroSegundo > numeroPrimeiro){
-//     console.log(numeroTerceiro, numeroSegundo, numeroPrimeiro)
-// }
+ if(numeroTerceiro === numeroSegundo && numeroSegundo === numeroPrimeiro){
+     console.log("todos os numeros sao iguais")
+ }
+else if(numeroPrimeiro === numeroSegundo){
+      console.log("o primeiro e igual ao segundo numero")
+ }
+ else if(numeroPrimeiro > numeroSegundo && numeroSegundo > numeroTerceiro){
+    console.log(numeroPrimeiro, numeroSegundo, numeroTerceiro)
+     } 
+ else if(numeroPrimeiro > numeroTerceiro && numeroTerceiro > numeroSegundo){
+     console.log(numeroPrimeiro, numeroTerceiro, numeroSegundo)
+ }
+ else if(numeroSegundo > numeroPrimeiro && numeroPrimeiro > numeroTerceiro){
+    console.log(numeroSegundo, numeroPrimeiro, numeroTerceiro)
+ }
+ else if(numeroSegundo > numeroTerceiro && numeroTerceiro > numeroPrimeiro){
+     console.log(numeroSegundo, numeroTerceiro, numeroPrimeiro)
+ }
+ else if(numeroTerceiro > numeroPrimeiro && numeroPrimeiro > numeroSegundo){
+     console.log(numeroTerceiro, numeroPrimeiro, numeroSegundo)
+ }
+ else if(numeroTerceiro > numeroSegundo && numeroSegundo > numeroPrimeiro){
+     console.log(numeroTerceiro, numeroSegundo, numeroPrimeiro)
+ }
 
 // c.
-// const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
-// const numeroSegundo = Number(prompt("digite o numero segundo"))
-// const numeroTerceiro = Number(prompt("digite o terceiro numero"))
+
+ const numeroPrimeiro = Number(prompt("digite o numero primeiro"))
+ const numeroSegundo = Number(prompt("digite o numero segundo"))
+ const numeroTerceiro = Number(prompt("digite o terceiro numero"))
     
-// if(numeroTerceiro === numeroSegundo && numeroSegundo === numeroPrimeiro){
-//     console.log("digite ao menos um numero diferente")
-// }
+ if(numeroTerceiro === numeroSegundo && numeroSegundo === numeroPrimeiro){
+    console.log("digite ao menos um numero diferente")
+ }
 
 
 // Exercício 5
