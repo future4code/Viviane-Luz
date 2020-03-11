@@ -2,3 +2,20 @@
     display: flex;
     justify-content: space-evenly;
 }
+.dia-da-semana {
+    width: 200px;
+    height: 600px;
+    border-right: solid 1px gray;
+    padding: 20px;
+}
+.formulario{
+    padding: 20px;
+    text-align: center;
+}
+h5{
+    display: inline;
+}
+h5, input, select, button {
+    margin-right: 10px;
+
+}

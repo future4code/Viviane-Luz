@@ -6,33 +6,33 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="index.js" defer></script>
 
-    <title>Document</title>
+    <title>Planner</title>
 </head>
 <body>
-    <h1>Minha Semana</h1>
-            <hr>
-            <input type="text">
-<button onclick="diaDaSemana();">Inserir Tarefa</button>
-
-<select class="select" name="semana">
-    <option value="inserir" disabled selected>Dia da Semana</option>
-    <option value="1">Segunda-Feira</option>
-    <option value="2">Terça-Feira</option>
-    <option value="4">Quarta-Feira</option>
-    <option value="5">Quinta-Feira</option>
-    <option value="6">Sexta-Feira</option>
-    <option value="7">Sábado</option>
-    <option value="8">Domingo</option>
-  </select>
-
+    <div class="formulario">
+        <h5>Nova Tarefa:</h5>    
+        <input type="text">
+        <select id="select" name="semana">
+                <option  disabled selected>Dia da Semana</option>
+                <option>Segunda-Feira</option>
+                <option>Terça-Feira</option>
+                <option>Quarta-Feira</option>
+                <option>Quinta-Feira</option>
+                <option>Sexta-Feira</option>
+                <option>Sábado</option>
+                <option>Domingo</option>
+        </select>
+        <button type="button" onclick="diaDaSemana()">Inserir Tarefa</button>
+    </div>
+  <hr>
 <div id="container">  
-    <div id="segunda">Segunda-Feira</div>
-    <div id="terca">Terça-Feira</div>
-    <div id="quarta">Quarta-Feira</div>
-    <div id="quinta">Quinta-Feira</div>
-    <div id="sexta">Sexta-Feira</div>
-    <div id="sabado">Sábado</div>
-    <div id="domingo">Domingo</div>
+    <div class="dia-da-semana">Segunda-Feira<ul id="segunda"></ul></div>
+    <div class="dia-da-semana">Terça-Feira<ul id="terca"></ul></div>
+    <div class="dia-da-semana">Quarta-Feira<ul id="quarta"></ul></div>
+    <div class="dia-da-semana">Quinta-Feira<ul id="quinta"></ul></div>
+    <div class="dia-da-semana">Sexta-Feira<ul id="sexta"></ul></div>
+    <div class="dia-da-semana">Sábado<ul id="Sábado"></ul></div>
+    <div class="dia-da-semana">Domingo<ul id="Domingo"></ul></div>
 </div>
 </body>
 </html>
