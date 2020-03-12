@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Despesas</title>
+</head>
+    <body>
+        <h5>Controlador de Despesas:</h5>      
+            <div class="formulario">
+            <form>
+                <label for="name">valor:</label><br>
+                <input type="text" id="name" name="name">
+                <br>
+                <p>Tipo(Casa, Festas, Viagens)</p> <select id="select" name="">
+                <option  disabled selected>Cadastrar Despesas</option>
+                <option value="casa">Casa</option>
+                <option value="Festas">Festas</option>
+                <option value="Viagens">Viagens</option>
+                </select>
+            </form>
+            </div>
+        <form>   
+            <label for="name">Descrição:</label><br>
+            <input type="text" id="" name="name">
+        </form>
+        <button type="button" onclick="cadastreDespesa">Cadastrar Despesa</button>
+
+        <h5>Despesas Detalhadas:</h5>         
+        <div class="formulario2">
+            <form>
+                <p>Tipo(Casa, Festas, Viagens)</p> <select>
+                <option disabled selected>Cadastrar Despesas</option> 
+                <option value="casa">Casa</option>
+                <option value="Festas">Festas</option>
+                <option value="Viagens">Viagens</option>
+                </select>
+            <label for="name">valor Mínimo:</label><br>
+                <input type="text" id="" name="name"><br>
+                <label for="name">valor Máximo:</label><br>
+                <input type="text" id="" name="name"><br>
+                <button type="button">Filtrar</button>
+                <button type="button">Limpar Filtros</button>
+            </form>
+        </div>
+    </body>
+    </html>
