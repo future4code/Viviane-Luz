@@ -1,0 +1,6 @@
+img, h2, p{
+    display: inline;
+}
+img{
+    width: 30px;
+}
