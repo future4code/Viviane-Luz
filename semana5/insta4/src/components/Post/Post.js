@@ -20,11 +20,34 @@ class Post extends React.Component {
     }
   }
 
-  onClickCurtida = () => {
-    console.log('Curtiu!')
-  }
+  // onClickCurtida = () => {
+  //   if(!this.state.curtido){
+  //     this.setState({
+  //       numeroCurtidas: this.state.numeroCurtidas + 1,
+  //       curtido:true
+  //     })
 
-  onClickComentario = () => {
+    // console.log('Curtiu!')
+  
+ 
+  onClickCurtida = ()=>{
+    if(!this.state.curtido){
+    this.setState({
+      numeroCurtidas: this.state.numeroCurtidas + 1,
+      curtido: true
+    })
+  } else {
+    this.setState({
+      numeroCurtidas: this.state.numeroCurtidas = 0,
+      curtido: false
+    })
+
+}
+}
+
+
+
+   onClickComentario = () => {
     this.setState({
       comentando: !this.state.comentando
     })
@@ -33,7 +56,7 @@ class Post extends React.Component {
   aoEnviarComentario = () => {
     this.setState({
       comentando: false,
-      numeroComentarios: this.state.numeroComentarios + 1
+      numeroComentarios: this.state.numeroComentarios
     })
   }
 
