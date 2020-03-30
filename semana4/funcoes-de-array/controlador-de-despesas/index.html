@@ -8,42 +8,45 @@
     <title>Despesas</title>
 </head>
     <body>
-        <h5>Controlador de Despesas:</h5>      
+        <div class="container">
             <div class="formulario">
+                <h5>Controlador de Despesas:</h5>      
             <form>
-                <label for="name">valor:</label><br>
-                <input type="text" id="name" name="name">
+                <label for="valor">valor:</label><br>
+                <input type="number" id="valor" name="name">
                 <br>
-                <p>Tipo(Casa, Festas, Viagens)</p> <select id="select" name="">
-                <option  disabled selected>Cadastrar Despesas</option>
+                <p>Tipo(Casa, Festas, Viagens)</p> 
+                <select id="despesa" name="">
                 <option value="casa">Casa</option>
                 <option value="Festas">Festas</option>
                 <option value="Viagens">Viagens</option>
                 </select>
             </form>
+            <form>   
+                <label for="descricao">Descrição:</label><br>
+                <input type="text" id="descricao" name="name">
+            </form>
+            <button type="button" onclick="cadastreDespesa()">Cadastrar Despesa</button>
+    
             </div>
-        <form>   
-            <label for="name">Descrição:</label><br>
-            <input type="text" id="" name="name">
-        </form>
-        <button type="button" onclick="cadastreDespesa">Cadastrar Despesa</button>
+       
+        <div class="formulario">
+            <h5>Despesas Detalhadas:</h5>         
 
-        <h5>Despesas Detalhadas:</h5>         
-        <div class="formulario2">
             <form>
-                <p>Tipo(Casa, Festas, Viagens)</p> <select>
-                <option disabled selected>Cadastrar Despesas</option> 
+                <p>Tipo(Casa, Festas, Viagens)</p> <select id="filtroDespesa">
                 <option value="casa">Casa</option>
                 <option value="Festas">Festas</option>
                 <option value="Viagens">Viagens</option>
                 </select>
-            <label for="name">valor Mínimo:</label><br>
-                <input type="text" id="" name="name"><br>
-                <label for="name">valor Máximo:</label><br>
-                <input type="text" id="" name="name"><br>
-                <button type="button">Filtrar</button>
+            <label for="valorMinimo">valor Mínimo:</label><br>
+                <input type="number" id="valorMinimo"><br>
+                <label for="valorMaximo">valor Máximo:</label><br>
+                <input type="number" id="valorMaximo"><br>
+                <button type="button" onclick="filtrarDespesa()">Filtrar</button>
                 <button type="button">Limpar Filtros</button>
             </form>
         </div>
+    </div>
     </body>
     </html>

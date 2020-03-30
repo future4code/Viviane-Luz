@@ -1,10 +1,18 @@
-
-  
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 h5{
     font-style: bold;
     font-family: sans-serif, arial;
     font-size: 16px;
 }
-
+.formulario{
+    border: solid gray;
+    width: 240px;
+    padding: 20px;
+}
 
 
