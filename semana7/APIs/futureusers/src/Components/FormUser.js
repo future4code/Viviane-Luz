@@ -9,8 +9,8 @@ class FormUser extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            nome: "",
-            email: "",
+            nomeDigitado: "",
+            emailDigitado: "",
             aoSalvarBotao: 0
         }
     }
@@ -27,10 +27,10 @@ class FormUser extends React.Component {
                 'api-token': "viviane-Hamilton"
             }
         }).then(() =>{
-            alert("Usuário criado com sucesso")
-        }).catch(() =>
-            alert("Erro")
-        )
+            alert("Usuário criado com sucesso!")
+        }).catch(() =>{
+            alert("Erro ao criar usuário")
+        })
     }
 
     aoDigitarNomeInput = (event) => {
@@ -54,9 +54,9 @@ class FormUser extends React.Component {
         return(
             <Container>
             <div>
-                <h3>{ this.props.nome }</h3>
+                <label>Nome:</label>
                 <input onChange={this.aoDigitarNomeInput} value={this.state.nomeDigitado}/>
-                   <h3>{ this.props.email }</h3>
+                <label>Email:</label>
                 <input onChange={this.aoDigitarEmailInput} value={this.state.emailDigitado}/>
                 <button onClick={this.aoSalvarBotao}>Salvar</button>
             </div>
@@ -67,13 +67,17 @@ class FormUser extends React.Component {
   }
 
 const Container = styled.div`
-border:  solid black;
-width: 300px;
+border: solid black;
+width: 200px;
 margin: 100px auto; 
-padding: 20px;
+padding: 30px;
 display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100px;
 
 `
+
 
   
 
