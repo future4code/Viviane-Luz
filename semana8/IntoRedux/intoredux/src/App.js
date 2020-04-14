@@ -1,13 +1,14 @@
 import React from 'react';
-import Task from './Components/Task'
-import Funções from './Components/Funções'
+import Todo from './Actions/Todo'
+// import TodoItem from './Reducers/Index'
 
 
 
 function App() {
   return (
     <div>
-       <Task />
+       <Todo />
+       {/* <TodoItem /> */}
     </div>
   );
 }
