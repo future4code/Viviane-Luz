@@ -17,16 +17,7 @@ export function createTask(text, id){
 
 export function addTask(text) {
     return {
-        type: 'ADICIONAR_TAREFA',
-        payload: {
-            text: completas
-        }
-
-    }
-}
-export function deleteTask(text) {
-    return {
-        type: 'Deletar_TAREFA',
+        type: 'ADD_TASK',
         payload: {
             text: pendentes
         }
@@ -34,15 +25,26 @@ export function deleteTask(text) {
     }
 }
 
-export function markTask(text) {
+export function deleteTask(text) {
     return {
-        type: 'Marcar_TAREFA',
+        type: 'Deletar_TAREFA',
         payload: {
-            text: todas
+            text: deletar
         }
 
     }
 }
+
+export function markTask(text) {
+    return {
+        type: 'MARK_TASK',
+        payload: {
+            text: copletas
+        }
+
+    }
+}
+
 
 
 
