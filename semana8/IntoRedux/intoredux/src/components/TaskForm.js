@@ -2,22 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import axios from 'axios'
+import todos from '../Actions/todos'
+import {connect} from 'react-redux'
+import {addTask} from '../Actions/todos'
 
 
-class Todo extends React.Component {
+class TaskForm extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            nomeDigitado: "",
-            aoSalvarBotao: 0
+            
         }
     }
    
-    
-    aoSalvarBotao = (event) => {        
-        console.log(this.state.nomeDigitado)
-        }
-            
+          
     aoDigitarTarefa = (event) => {
         const conteudoDigitado = event.target.value
         this.setState({
@@ -26,6 +24,7 @@ class Todo extends React.Component {
         )
 
     }
+
 
     render() {
         return(
@@ -42,6 +41,16 @@ class Todo extends React.Component {
     }
     
   }
+  
+  const mapStateToProps = state => {
+      return {}
+  }
+  const mapDispatchToProps = dispatch => {
+      return {
+        addTask: text => {dispatch(addTask(text))}
+      };
+  };
+
 
 const Container = styled.div`
 display:flex;
@@ -78,11 +87,14 @@ margin-right: 20px;
 
 
 
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(TaskForm);
 
 
 
 
-export default Todo
 
 
 
