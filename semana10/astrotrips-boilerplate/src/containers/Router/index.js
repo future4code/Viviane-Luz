@@ -1,24 +1,37 @@
 import React from "react";
 import { ConnectedRouter } from "connected-react-router";
+import { connect } from "react-redux"; 
 import { Switch, Route } from "react-router-dom";
+import HomePage from "../HomePage";
 import LoginPage from "../LoginPage";
-import ListPage from "../ListPage";
+import FormTrip from "../FormTrip";
+import CreateTripPage from "../CreateTripPage";
+import ListTripsPage from "../ListTripsPage";
+import TripDetailsPage from "../TripDetailsPage"
 
-
-
-const routes = {
-  root: "/"
-  // Outras rotas aqui
+export const routes = {
+  root: "/",
+  loginPage: "/loginPage",
+  formTrip: "/formTrip",
+  createTripPage: "/createTripPage",
+  listTripsPage: "/listTripsPage",
+  tripDetailsPage: "/tripDetailsPage",
 };
 
-function Router(props) {
+
+export const Router = props => {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.root} component={LoginPage} />
+        <Route path={routes.root} component={HomePage} />
+        <Route path={routes.loginPage} component={LoginPage} />
+        <Route path={routes.formTrip} component={FormTrip} />
+        <Route path={routes.createTripPage} component={CreateTripPage} />
+        <Route path={routes.listTripsPage} component={ListTripsPage} />
+        <Route path={routes.tripDetailsPage} component={TripDetailsPage} />
       </Switch>
     </ConnectedRouter>
   );
 }
 
-export default Router;
+export default connect() (Router);       
