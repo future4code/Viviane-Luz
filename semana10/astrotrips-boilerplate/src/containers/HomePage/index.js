@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+// import { CountryDropdown, RegionDropdown, } from 'react-country-region-selector';
 
 
 
@@ -7,22 +8,60 @@ class HomePage extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        form: {}
+        form: {
+          country: '',
+          region: '',
+        }
       };
     }
+    // selectCountry (val) {
+    //   this.setState({ country: val });
+    // }
+   
+    // selectRegion (val) {
+    //   this.setState({ region: val });
+    // }  
 
 handleFormSubmit = event => {
   event.preventDefault();
-  console.log("oiiiiii")
+  console.log(this.state.form)
+  this.setState({ form: {} });
+
 }
-    render(){
-      return(
-        <MyTripForm onSubmit={this.handleFormSubmit}>
-          <MyForm></MyForm>
-          <MyForm></MyForm>
-          <MyForm></MyForm>
-          <MyFormButton type="submit">Send</MyFormButton>
-         </MyTripForm >
+
+handleInputChange = (event) => {
+  const { name, value } = event.target;
+    this.setState ({ form: { ...this.state.form, [name]: value }}) /*fiz essa sintaxe sem entender direito*/
+}
+
+render(){
+  return(
+    <MyTripForm onSubmit={this.handleFormSubmit}>
+        {/* <CountryDropdown
+          value={country}
+          onChange={(val) => this.selectCountry(val)} />
+        <RegionDropdown
+          country={country}
+          value={region}
+          onChange={(val) => this.selectRegion(val)} /> */}
+
+      <label>Nome:</label>
+      <MyForm onChange={this.handleInputChange} value={this.state.form.nome} name="nome"required type="text" pattern="[A-Za-z]{3,}" 
+      title="o nome deve conter no min 3letras"></MyForm>
+      <label>Idade:</label>
+      <MyForm onChange={this.handleInputChange} value={this.state.form.idade} name="idade"required type="number" min={18}></MyForm>
+      <label>Teste de aplicação:</label>
+      <MyForm onChange={this.handleInputChange} value={this.state.form.email}name="applicationText:"required type="applicationText:"></MyForm>
+      <label>Profissão:</label>
+      <MyForm onChange={this.handleInputChange} value={this.state.form.profissão} name="profissão"required type="text"></MyForm>
+      <label>País:</label>
+      <MyForm onChange={this.handleInputChange} value={this.state.form.país} name="país"required type="text"></MyForm>
+      <label>Trip:</label>
+      <select onChange={this.handleChange} value={this.state.value}>
+      <option value="planeta">Planeta</option>
+      </select>
+      <MyFormButton type="submit">Send</MyFormButton>
+      </MyTripForm >
       )    
     }
 }
