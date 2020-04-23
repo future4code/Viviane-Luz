@@ -16,7 +16,11 @@ class FormTrip extends Component {
       };
     }
     render(){
-      return <div> Oi, sou a CreateTripPage!</div>
+      return 
+      <div>
+        <button>Next</button>
+
+      </div>
     }
 }
 export default FormTrip
