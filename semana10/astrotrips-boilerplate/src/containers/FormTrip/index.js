@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 
 
-
 class FormTrip extends Component {
     constructor(props) {
       super(props);
@@ -16,11 +15,13 @@ class FormTrip extends Component {
       };
     }
     render(){
-      return 
-      <div>
+      return (
+        <div>
         <button>Next</button>
 
       </div>
+      )
+     
     }
 }
 export default FormTrip

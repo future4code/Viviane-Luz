@@ -1,10 +1,9 @@
 import axios from 'axios';
 import { push } from 'connected-react-router';
 import { routes } from '../containers/Router/index';
-import { ListTrip, TripDetailsPage } from './ListTrip';
 
 
-export const authenticationLogin = (email , password ) => async(dispatch) {
+export const authenticationLogin = (email , password ) => async(dispatch) => {
     const loginInformation = {
         email:email,
         password:password,
@@ -13,14 +12,14 @@ export const authenticationLogin = (email , password ) => async(dispatch) {
         const response = await axios.post('https://us-central1-missao-newton.cloudfunctions.net/futureX/viviane-hamilton/login', loginInformation);
 
         const userToken = response.data.token;
-        window.localStorage.setItem("token", token);
+        window.localStorage.setItem("token", userToken);
     
-        dispatch(push(routes.adminPanel))
+        dispatch(push(routes.loginPage))
     }catch(error){
         window.alert ("Erro ao tentar fazer login")
     }
 }
-}
+
 
 export const applicateUser = (form) => async (dispatch) => {
     const formData = {
@@ -34,7 +33,7 @@ export const applicateUser = (form) => async (dispatch) => {
         await axios.post(`https://us-central1-missao-newton.cloudfunctions.net/futureX/viviane-hamilton/trips/${form.tripId}/apply`, formData)
         window.alert("Sua inscrição foi realizada com sucesso!")
     } catch(error) {
-        window.alert("Ocorreu um erro ao tentar aplicar para a viagem.")
+        window.alert("Ocorreu um erro ao tentar realizar a viagem.")
     }
 }
 export const approveCandidate = (tripId, candidateId, response) => async (dispatch) => {
@@ -48,8 +47,8 @@ export const approveCandidate = (tripId, candidateId, response) => async (dispat
     }
     try {
         await axios.put(`https://us-central1-missao-newton.cloudfunctions.net/futureX/viviane-hamilton/trips/${tripId}/candidates/${candidateId}/decide`, data, config)
-        dispatch(tripDetailsPage(tripId))
+        dispatch(push())
     } catch(error) {
-        window.alert("Ocorreu um erro ao tentar aprovar candidato.")
+        window.alert("Erro ao tentar aprovar candidato.")
     }
 }

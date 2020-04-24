@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import { connect } from "react-redux";
-import { push } from "connected-react-router";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import styled from "styled-components";
+// import { connect } from "react-redux";
+// import { push } from "connected-react-router";
+// import TextField from "@material-ui/core/TextField";
+// import Button from "@material-ui/core/Button";
+// import styled from "styled-components";
 
 class CreateTripPage extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class CreateTripPage extends Component {
       };
     }
     render(){
-      return <div> Oi, sou a CreateTripPage!</div>
+      return <div>next</div>
     }
 }
 export default CreateTripPage

@@ -11,10 +11,11 @@ class TripDetailsPage extends Component {
       };
     }
     render(){
-      return 
+      return (
       <div> 
         <button>Next</button>
       </div>
-    }
+    )}
+      
 }
 export default TripDetailsPage

@@ -23,12 +23,12 @@ export const Router = props => {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.root} component={HomePage} />
-        <Route path={routes.loginPage} component={LoginPage} />
-        <Route path={routes.formTrip} component={FormTrip} />
-        <Route path={routes.createTripPage} component={CreateTripPage} />
-        <Route path={routes.listTripsPage} component={ListTripsPage} />
-        <Route path={routes.tripDetailsPage} component={TripDetailsPage} />
+        <Route exact path={routes.root} component={HomePage} />
+        <Route exact path={routes.loginPage} component={LoginPage} />
+        <Route exact path={routes.formTrip} component={FormTrip} />
+        <Route exact path={routes.createTripPage} component={CreateTripPage} />
+        <Route exact path={routes.listTripsPage} component={ListTripsPage} />
+        <Route exact path={routes.tripDetailsPage} component={TripDetailsPage} />
       </Switch>
     </ConnectedRouter>
   );

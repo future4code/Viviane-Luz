@@ -56,7 +56,6 @@ class LoginPage extends Component {
 }
 
 
-
 const mapDispatchToProps = dispatch => {
   return {
     goToListTripsPage: () => dispatch(push(routes.listTripsPage)),
