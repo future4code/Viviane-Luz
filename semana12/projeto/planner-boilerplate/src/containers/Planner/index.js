@@ -1,36 +1,54 @@
 import React from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from 'redux';
+import * as taskActions from '../../actions/task' 
 
 class Planner extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      dias: "",
+      task: ""
+    }
+this.onChange = (event) => {
+  this.setState({ dias: event.target.value })
+  }
+
+// onClick = () => {
+//   this.setState({})
+// }
+
+}
+  
   render() {
     const dias = [
       "Domingo",
-      "Segunda",
-      "Terça",
-      "Quarta",
-      "Quinta",
-      "Sexta",
+      "Segunda-Feira",
+      "Terça-Feira",
+      "Quarta-Feira",
+      "Quinta-Feira",
+      "Sexta-Feira",
       "Sábado"
     ]
     return (
       <div>
         <form>
-        <label>Tarefa</label>
-        <input type="text"></input>
+        <label>Tarefa:</label>
+        <input name="nome" type="text" value={this.state.dias} onChange={this.onChange}></input>
         </form>
-        <select>
-          <option>Domingo</option>
-          <option>Segunda</option>
-          <option>Terça</option>
-          <option>Quarta</option>
-          <option>Quinta</option>
-          <option>Sexta</option>
-          <option>Sábado</option>
-        </select>
-        <button>Salvar</button>    
+        <select>{dias.map((dias)=>{
+      return (
+        <option key={dias} value={dias}>{dias}</option>
+            )
+          })}
+        </select>   
+        <button onClick={this.addNewTask}>Criar Tarefa</button>    
 			</div>
 		)
   }
 }
 
-export default connect()(Planner);
+const mapDispatchToProps = dispatch => 
+  bindActionCreators(taskActions, dispatch) 
+
+export default connect(null, mapDispatchToProps)(Planner);
