@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
-import * as taskActions from '../../actions/task' 
-
+import * as taskActions from '../../actions/task'
+;
 class Planner extends React.Component {
   constructor(props){
     super(props)
@@ -10,16 +10,7 @@ class Planner extends React.Component {
       dias: "",
       task: ""
     }
-this.onChange = (event) => {
-  this.setState({ dias: event.target.value })
-  }
-
-// onClick = () => {
-//   this.setState({})
-// }
-
 }
-  
   render() {
     const dias = [
       "Domingo",
@@ -41,14 +32,12 @@ this.onChange = (event) => {
         <option key={dias} value={dias}>{dias}</option>
             )
           })}
-        </select>   
-        <button onClick={this.addNewTask}>Criar Tarefa</button>    
-			</div>
-		)
+        </select>
+        <button onClick={this.onClickSalvar}>Salvar</button>
+      </div>
+    )
   }
 }
-
 const mapDispatchToProps = dispatch => 
-  bindActionCreators(taskActions, dispatch) 
-
+  bindActionCreators(taskActions, dispatch)
 export default connect(null, mapDispatchToProps)(Planner);

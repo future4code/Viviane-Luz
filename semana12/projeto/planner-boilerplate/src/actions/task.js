@@ -15,7 +15,7 @@ export const setTask = text => {
 /*função assincrona, contato com api*/
 export const getTask = () => async (dispatch, getState) => {
     const task = await axios.get("https://us-central1-missao-newton.cloudfunctions.net/generic/:planner-viviane");
-    dispatch(setPosts(task.data));
+    dispatch(setTask(task.data));
 };
 export const createTask = (text, day) => async (dispatch, getState) => {
     const body = {
