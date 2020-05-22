@@ -1,14 +1,23 @@
 import * as fs from 'fs';
 
+let accounts = []
+
 const userInfo: user = {
  name: string(process.argv[2]),
  age:  Number(process.argv[3]),
  cpf: Number (process.argv[4])
 }
-function userInfo(arrayUser: userInfo[], name: string, cpf ?: string, age: string){
-  if(cpf){
-    return arrayUser.filter(cpf: userInfo =>{
+function createAcounte(accounte: user){
+  const data: Buffer = fs.readFileSync(fileName);// vai impedir que o writeFileSync sobrescreva o que está no arquivo
+  fs.writeFileSync("userInfo.json", JSON.stringify(userInfo))
+  const userInfo: string[] = users.map((user: any) => `${user.username} - ${user.cpf}`);
+  console.log(userInfo);
+
+
+  if(cpf === newCpf){
+    return accounte.filter(cpf: createAccounte =>{
       userInfo.cpf === cpf
+      console.log("Abra sua conta")
     })
   }
 }
@@ -31,18 +40,10 @@ if(age < 18){
  console.log('Esse cpf já possui cadastro');
 
 }
-
-  const data: Buffer = fs.readFileSync(fileName);
-  // os dados são retornados em um formato, e chama método toString
-  const treatedData: string = data.toString();  //não entendi aqui
-  const users: any = JSON.parse(treatedData);  //errado
-  const usersInfo: string[] = users.map((user: any) => `${user.username} - ${user.cpf}`);
-  console.log(usersInfo);
-  console.log('Cpf já casdatrado ', users.cpf)
+  // const treatedData: string = data.toString();  //não entendi aqui
+  // const users: any = JSON.parse(treatedData);  //não entendi aqui o que faz exatamente
+  // console.log('Cpf já cadastrado ', users.cpf)
 } 
-
-
-projejto da semana
 
 
 
