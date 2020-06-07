@@ -11,45 +11,41 @@
  * 
  */
 
-
 console.log("Bem vindo ao jogo de Blackjack!")
 
+const resposta = 0
+
 if(confirm("Quer iniciar uma nova rodada?")){
-   (jogador === "s")
-   console.log("true")
-}else{
-   console.log("O jogo acabou")
+   (resposta === "s")
 
-}
-
-const jogador = comprarCarta();
-console.log("K♦️" + 10) 
 
 const usuario = comprarCarta();
-const usuarioCarta = comprarCarta();
+const cartaUsuario = comprarCarta();
+const cartaComputador = comprarCarta();
 const computador = comprarCarta();
-const computadorCarta = comprarCarta();
 
-let cartas = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-for(let i =0; i<= 2; i++){
-   if(i === "K♦️"){
-      console.log("K♦️" ) 
+const somaUsuario = usuario.valor + cartaUsuario.valor 
+const somaComputador = computador.valor + cartaComputador.valor
+console.log("Usuário - cartas: ", usuario.texto, cartaUsuario.texto, " - pontuação ", (somaUsuario));
+console.log("Computador - cartas: ", cartaComputador.texto, computador.texto, " - pontuação " , (somaComputador));
 
-   }
-}
-console.log("Usuário - cartas: ", carta.Texto, " - pontuação " + usuario);
-   console.log("Computador - cartas: ", carta.valor, " - pontuação " + computador);
+// let carta = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+// for(let i =0; i<= 2; i++){
+//    if(i === "K♦️"){
+//       console.log("K♦️" + 10) 
+//    }
+// }
 
-if (jogador > computador){
+if(somaUsuario > somaComputador){
    console.log("O usuário ganhou!")
-}else if (jogador < computador){
+}else if (somaUsuario < somaComputador){
    console.log("O computador ganhou!")
-}else if (jogador === computador){
+}else{
    console.log("Empatou!")
-}else {
-   console.log("O jogo acabou!!!")
-   }
-
+}
+}else{
+   console.log("O jogo acabou")
+}
 
 
 
