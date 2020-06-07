@@ -29,6 +29,8 @@ const somaComputador = computador.valor + cartaComputador.valor
 console.log("Usuário - cartas: ", usuario.texto, cartaUsuario.texto, " - pontuação ", (somaUsuario));
 console.log("Computador - cartas: ", cartaComputador.texto, computador.texto, " - pontuação " , (somaComputador));
 
+// Tem alguma forma de acessar o valor, diferente do exemplo acima, para acessar o valor da carta?
+
 // let carta = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 // for(let i =0; i<= 2; i++){
 //    if(i === "K♦️"){

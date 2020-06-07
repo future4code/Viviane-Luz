@@ -43,6 +43,7 @@ if(confirm("Quer iniciar uma nova rodada?")){
 //    usuario = comprarCarta();
 
 // }
+//A ideia era fazer um while até chegar 21, mas não consegui.
 
    confirm(
       "Deseja comprar mais uma carta?" + 
