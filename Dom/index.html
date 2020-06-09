@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
     <title>Planner</title>
 </head>
 <body>
     <h1>Minha Semana</h1>
     <input type="text" value="" id="select" onchange="adicionarTarefa()">
     <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
-    <ul id="container">
+    <article id="container">
         <select name="select" id="semana" value=" ">
             <option value="Segunda">Segunda-Feira</option> 
             <option value="Terça">Terça-Feira</option> 
@@ -21,42 +23,16 @@
             <option value="Domingo">Domingo</option> 
           </select>
           <hr>
-    </ul>
-    <article id="Segunda">
-        <li>
-            Segunda-feira
-        </li>
-    </article> 
-    <article id="Terça">
-        <li>
-            Terça
-       </li>
-    </article> 
-    <article id="Quarta">
-        <li>
-            Quarta
-       </li>
-    </article>   
-    <article id="Quinta">
-        <li>
-            Quinta
-       </li>
-    </article>
-    <article id="Sexta">
-        <li>
-            Sexta
-       </li>
-    </article> 
-    <article id="Sábado">
-        <li>
-            Sábado
-       </li>
-    </article> 
-    <article id="Domingo">
-        <li>
-            Domingo
-       </li>
-    </article>      
+        </article>
+<main>
+    <ul id="Segunda">Segunda-Feira</ul> 
+    <ul id="Terça">Terça-Feira</ul> 
+    <ul id="Quarta">Quarta-Feira</ul>   
+    <ul id="Quinta"> Quinta-Feira</ul>
+    <ul id="Sexta">Sexta-Feira</ul> 
+    <ul id="Sábado">Sábado</ul> 
+    <ul id="Domingo"> Domingo</ul> 
+</main>  
 </body>
 </html>
 
