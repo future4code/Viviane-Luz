@@ -1,0 +1,91 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	padding: 0px;
+	margin: 0px;
+	font-size: 10px;
+	color: white;
+}
+
+header {
+	display: flex;
+	background-color: #FF8C00;
+	padding: 20px;
+	margin: 0 0 20px 0;
+}
+
+nav {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+input {
+	margin-right: 8px;
+	border-radius: 50px;
+	border: 0px;
+}
+
+main {
+	margin: 0 auto;
+	height: 90vh;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container-video {
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+.card-video {
+	width: 24%;
+	margin-bottom: 20px;
+}
+
+a {
+	font-family: sans-serif;
+	color: #FF8C00;
+}
+
+h2 {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: grey;
+	text-align: center;
+}
+
+footer {
+	background-color: grey;
+	padding: 18px;
+	bottom: 0;
+	color: white;
+	font-size: 10px;
+}
+
+video {
+	margin: 40px;
+	text-align: center;
+	margin: auto 0;
+}
+
+@media screen and (max-width: 400px) {
+	.three-blocks-container {
+		flex-direction: column;
+		align-items: stretch;
+		padding: 0px 5px;
+	}
