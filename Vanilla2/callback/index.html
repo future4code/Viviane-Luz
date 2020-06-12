@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <script src="index.js" defer></script>
+      <title>Controlador de Despesas</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="formulario">
+            <h5>Controlador de Despesas:</h5>
+            <form>
+               <label for="valor">valor:</label><br>
+               <input type="number" id="valor" name="name">
+               <br>
+               <p>Tipo: (Casa, Festas, Viagens)</p>
+               <select id="despesa" name="">
+                  <option value="casa">Casa</option>
+                  <option value="Festas">Festas</option>
+                  <option value="Viagens">Viagens</option>
+               </select>
+            </form>
+            <form>   
+               <label for="descricao">Descrição:</label><br>
+               <input type="text" id="descricao" name="name">
+            </form>
+            <button type="button" onclick="cadastreDespesa(event)">Cadastrar Despesa</button>
+         </div>
+         <div class="formulario">
+            <h5>Despesas Detalhadas:</h5>
+            <form>
+               <p>Tipo(Casa, Festas, Viagens)</p>
+               <select id="filtroDespesa">
+                  <option value="casa">Casa</option>
+                  <option value="Festas">Festas</option>
+                  <option value="Viagens">Viagens</option>
+               </select>
+               <label for="valorMinimo">Valor Mínimo: R$ </label><br>
+               <input type="number" id="valorMinimo"><br>
+               <label for="valorMaximo">Valor Máximo: R$</label><br>
+               <input type="number" id="valorMaximo"><br>
+               <button type="button" onclick="filtrarDespesa(event)">Filtrar</button>
+               <button type="button" onclick="limparFiltro(event)">Limpar Filtros</button>
+            </form>
+         </div>
+      </div>
+      <div class="formulario">
+         <h1>Extrato</h1>
+         <h4>Valor Total:</h4>
+      </div>
+   </body>
+</html>
