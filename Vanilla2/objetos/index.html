@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Blog</title>
+</head>
+<body>
+<form>
+    <label for="name">Autor:</label>
+    <input id="autor" type="text" onchange="aoDigitarAutor(event)">
+    <label for="name">Título:</label>
+    <input id="titulo" type="text" onchange="aoDigitarTitulo(event)">
+    <textarea id="conteudo" rows="5" cols="33"> Post</textarea>
+    <button onclick="criarPost(event)">Criar Post</button>
+</form>
+</body>
+</html>

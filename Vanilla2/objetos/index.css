@@ -1,0 +1,26 @@
+body {
+    background-color: #fff0e5;
+}
+
+form {
+    width: 300px;    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+input {
+    margin: 10px 0;
+
+}
+
+textarea {
+    margin: 10px 0;
+}
+
+button {
+    margin: 10px 0;
+}
