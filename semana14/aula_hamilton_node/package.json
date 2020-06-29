@@ -1,0 +1,19 @@
+{
+  "name": "turma_hamilton",
+  "version": "0.0.1",
+  "description": "pacote muito legal criado na aula",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "tsc && node build/index.js",
+    "createFile": "mkdir pastaNova"
+  },
+  "keywords": [
+    "pacote",
+    "hamilton",
+    "legal",
+    "turma"
+  ],
+  "author": "Amanda",
+  "license": "ISC"
+}
