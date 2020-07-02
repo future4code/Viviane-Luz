@@ -1,33 +1,32 @@
 // // console.log("hello world")
+// // dentro da função usar dois pontos : e identificar que é number 
 
-function sum(number1:number, number2:number) : number {
-    return number1 + number2
-
+function operacao(number1:number, number2:number) : any {
+    let resultado: {
+        soma: number, 
+        sub: number, 
+        mult: number,
+        maior: number
+    }=
+    {
+        soma: number1 + number2, 
+        sub:  number1 - number2,
+        mult: number1 * number2,
+        maior: (number1 > number2 ? number1: number2)
+    }
+    return `a soma é ${resultado.soma}, a sub é ${resultado.sub}, a mult é ${resultado.mult}`
+ 
 }
-// dentro da função usar dois pontos : e identificar que é number 
-const resultSum: number = sum(4, 2);
-console.log("Resultado da soma", resultSum);
-// Função de soma
+ 
+console.log("Resultado", operacao(2,4));
+
+// tsc puro transpila, transforma o código para o computador/ tsc o nome do arquivo
+// ➜  src git:(viviane) ✗ tsc index.ts
+// ➜  src git:(viviane) ✗ node index.js
+// Resultado a soma é 6, a sub é -2, a mult é 8
 
 
-function sub(number1:number, number2:number) : number {
-    return number1 -  number2
-}
-const resultSub: number = sum(4, 2);
-console.log("Resultado da subtração", resultSum);
-// Função de subtração
 
 
-function mut(number1:number, number2:number) : number {
-    return number1 * number2
-}
-const resultMut: number = mut(4, 2);
-console.log("Resultado da mutiplicação", resultSum);
-// Função de mutiplicação
 
-function maior(number1:number, number2:number) : number {
-    if(number1 === 4)
-    return (number1);
 
-}
-console.log("É número maior")
