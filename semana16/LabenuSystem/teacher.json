@@ -1,0 +1,12 @@
+[
+   {
+      "id": "1",
+      "name": "Darvas",
+      "email": "darvas@darvas.com",
+      "specialties": [
+         "BACKEND",
+         "TYPESCRIPT",
+         "OOP"
+      ]
+   }
+]

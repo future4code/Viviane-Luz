@@ -1,20 +1,12 @@
 [
    {
-      "name": "Viviane",
-      "id": "102030",
-      "email": "viviane@viviane",
-      "dataDeNascimento": "8/4/1988"
-   },
-   {
-      "name": "Mateus",
-      "id": "102030",
-      "email": "Mateus@labenu",
-      "dataDeNascimento": "8/10/1990"
-   },
-   {
-      "name": "Goli",
-      "id": "id",
-      "email": "golilabenu@labenu",
-      "dataDeNascimento": "10/08/1996"
+      "id": "4",
+      "name": "Darvas",
+      "email": "darvas@gmail.com",
+      "dataDeNascimento": "1990-06-01T03:00:00.000Z",
+      "hobbies": [
+         "Jogar",
+         "Programar"
+      ]
    }
 ]
