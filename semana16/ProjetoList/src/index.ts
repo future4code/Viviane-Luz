@@ -10,11 +10,7 @@ dotenv.config();
 const connection = knex({   
   client: "mysql",
   connection: {
-    host:  "ec2-18-229-236-15.sa-east-1.compute.amazonaws.com",//process.env.DB_HOST,
-    port: 3306,
-    user: "julian_viviane_luz",
-    password: "MO6pRoroi2cl",//process.env.DB_PASSWORD,
-    database: "julian_viviane_luz",//process.env.DB_NAME,
+    
   },
 });
 
