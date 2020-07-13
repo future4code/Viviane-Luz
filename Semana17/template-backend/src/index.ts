@@ -34,18 +34,18 @@ import knex from 'knex'
 const connection = knex({ // Estabelece conexão com o banco
  client: "mysql",
  connection: {
- host:"ec2-18-229-236-15.sa-east-1.compute.amazonaws.com",
+ host:"",
  port:3306,
- user:"julian_viviane_luz_db",
- password:"~%EIeUC%TVwNAAatsQAn",
- database:"julian_viviane_db"
+ user:"turma_aluno",
+ password:"ahninanab",
+ database:"turma_aluno_db"
 }
 })
 
 const createTableUser = async (id: string, email: string, password: string) => {
   try {
   await connection.raw(`
-  CREATE TABLE User (
+  CREATE TABLE User2 (
     id VARCHAR(255) PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
