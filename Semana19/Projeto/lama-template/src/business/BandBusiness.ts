@@ -1,6 +1,6 @@
 import { CreateBandInputDTO } from "../model/Create";
 import { IdGenerator } from "../services/IdGenerator";
-import { CreateDatabase } from "../data/CreateDatabase";
+import { BandDatabase } from "../data/BandDatabase";
 
 
 export class CreateBusiness {
@@ -9,7 +9,7 @@ export class CreateBusiness {
         const idGenerator = new IdGenerator();
         const id = idGenerator.generate();
 
-        const createDatabase = new CreateDatabase();
+        const createDatabase = new BandDatabase();
 
 
         await createDatabase.createBand(id, name, input.name, input.genero)

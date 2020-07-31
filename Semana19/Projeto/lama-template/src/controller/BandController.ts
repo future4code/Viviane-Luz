@@ -1,8 +1,8 @@
-import {CreateBusiness} from '../business/CreateBusiness';
+import {CreateBusiness} from '../business/BandBusiness';
 import { Request, Response, request } from "express";
 import { Authenticator } from '../services/Authenticator';
 
-export class CreateController{
+export class BandController{
     static createBand(arg0: string, createBand: any) {
         throw new Error("Method not implemented.");
     }

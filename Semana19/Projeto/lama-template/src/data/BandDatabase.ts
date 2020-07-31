@@ -1,7 +1,7 @@
 import { BaseDatabase } from "./BaseDatabase";
 import { Create } from "../model/Create";
 
-export class CreateDatabase extends BaseDatabase {
+export class BandDatabase extends BaseDatabase {
     [x: string]: any;
 
   private static TABLE_NAME = "";
@@ -21,7 +21,7 @@ export class CreateDatabase extends BaseDatabase {
           genero,
           role
         })
-        .into(CreateDatabase.TABLE_NAME);
+        .into(BandDatabase.TABLE_NAME);
     } catch (error) {
       throw new Error(error.sqlMessage || error.message);
     }
@@ -30,7 +30,7 @@ export class CreateDatabase extends BaseDatabase {
   public async getCreateById(email: string): Promise<Create> {
     const result = await this.getConnection()
       .select("*")
-      .from(CreateDatabase.TABLE_NAME)
+      .from(BandDatabase.TABLE_NAME)
       .where({ email });
 
     return Create.toUserModel(result[0]);
