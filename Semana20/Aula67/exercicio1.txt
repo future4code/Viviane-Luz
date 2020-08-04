@@ -1,0 +1,19 @@
+b. "body": "{\"message\":\"Missing name\"}"
+
+c.  "statusCode": 400, 
+
+d.   "body": "{\"message\":\"Missing email\"}"
+
+e. falha ao enviar requisição
+
+f. {
+  "statusCode": 200,
+  "body": "{\"message\":\"User is correct\"}"
+}
+
+g. {
+  "statusCode": 400,
+  "body": "{\"message\":\"Invalid password\"}"
+}
+
+h.  "statusCode": 400,
