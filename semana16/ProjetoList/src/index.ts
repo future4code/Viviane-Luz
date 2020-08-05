@@ -2,10 +2,10 @@ import knex from "knex";
 import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
+import cors from "cors" 
 
 
 dotenv.config();
-
 
 const connection = knex({   
   client: "mysql",
@@ -14,11 +14,14 @@ const connection = knex({
   },
 });
 
-/**************************************************************/
 
 const app = express();
+app.use(cors({ origin: true})) 
+
 
 app.use(express.json());
+export default app;
+
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
